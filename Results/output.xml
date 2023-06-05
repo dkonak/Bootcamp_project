@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230605 12:14:40.162" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon" source="/home/yasirkonca/Desktop/Amazon-Shopping-Robot-Framework/Tests/Amazon.robot">
+<kw name="Insert Testing Data" library="Common" type="SETUP">
+<kw name="Log" library="BuiltIn">
+<arg>I am setting up the test data...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230605 12:14:40.611" level="INFO">I am setting up the test data...</msg>
+<status status="PASS" starttime="20230605 12:14:40.611" endtime="20230605 12:14:40.611"/>
+</kw>
+<kw name="Custom Keyword 1" library="Common">
+<kw name="Log" library="BuiltIn">
+<arg>Doing keyword 1...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230605 12:14:40.612" level="INFO">Doing keyword 1...</msg>
+<status status="PASS" starttime="20230605 12:14:40.612" endtime="20230605 12:14:40.612"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:40.611" endtime="20230605 12:14:40.613"/>
+</kw>
+<kw name="Custom Keyword 2" library="Common">
+<kw name="Log" library="BuiltIn">
+<arg>Doing keyword 2...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230605 12:14:40.614" level="INFO">Doing keyword 2...</msg>
+<status status="PASS" starttime="20230605 12:14:40.613" endtime="20230605 12:14:40.614"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:40.613" endtime="20230605 12:14:40.614"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:40.610" endtime="20230605 12:14:40.614"/>
+</kw>
+<test id="s1-t1" name="Logged out user go to Amazon" line="18">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:40.618" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:40.619" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:41.313" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:41.313" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5595e2ea24e3 &lt;unknown&gt;
+#1 0x5595e2bd1c76 &lt;unknown&gt;
+#2 0x5595e2bf8757 &lt;unknown&gt;
+#3 0x5595e2bf7029 &lt;unknown&gt;
+#4 0x5595e2c35ccc &lt;unknown&gt;
+#5 0x5595e2c3547f &lt;unknown&gt;
+#6 0x5595e2c2cde3 &lt;unknown&gt;
+#7 0x5595e2c022dd &lt;unknown&gt;
+#8 0x5595e2c0334e &lt;unknown&gt;
+#9 0x5595e2e623e4 &lt;unknown&gt;
+#10 0x5595e2e663d7 &lt;unknown&gt;
+#11 0x5595e2e70b20 &lt;unknown&gt;
+#12 0x5595e2e67023 &lt;unknown&gt;
+#13 0x5595e2e351aa &lt;unknown&gt;
+#14 0x5595e2e8b6b8 &lt;unknown&gt;
+#15 0x5595e2e8b847 &lt;unknown&gt;
+#16 0x5595e2e9b243 &lt;unknown&gt;
+#17 0x7effee8fe1da &lt;unknown&gt;
+#18 0x7effee986f44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:40.617" endtime="20230605 12:14:41.317"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:40.616" endtime="20230605 12:14:41.317"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:14:44.320" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:41.319" endtime="20230605 12:14:44.320"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:14:44.321" endtime="20230605 12:14:44.322"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:41.318" endtime="20230605 12:14:44.322"/>
+</kw>
+<doc>This is some basic information about the test 1</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:40.614" endtime="20230605 12:14:44.322">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5595e2ea24e3 &lt;unknown&gt;
+#1 0x5595e2bd1c76 &lt;unknown&gt;
+#2 0x5595e2bf8757 &lt;unknown&gt;
+#3 0x5595e2bf7029 &lt;unknown&gt;
+#4 0x5595e2c35ccc &lt;unknown&gt;
+#5 0x5595e2c3547f &lt;unknown&gt;
+#6 0x5595e2c2cde3 &lt;unknown&gt;
+#7 0x5595e2c022dd &lt;unknown&gt;
+#8 0x5595e2c0334e &lt;unknown&gt;
+#9 0x5595e2e623e4 &lt;unknown&gt;
+#10 0x5595e2e663d7 &lt;unknown&gt;
+#11 0x5595e2e70b20 &lt;unknown&gt;
+#12 0x5595e2e67023 &lt;unknown&gt;
+#13 0x5595e2e351aa &lt;unknown&gt;
+#14 0x5595e2e8b6b8 &lt;unknown&gt;
+#15 0x5595e2e8b847 &lt;unknown&gt;
+#16 0x5595e2e9b243 &lt;unknown&gt;
+#17 0x7effee8fe1da &lt;unknown&gt;
+#18 0x7effee986f44 clone
+</status>
+</test>
+<test id="s1-t2" name="Logged out user can search for products" line="23">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:44.330" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:44.332" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:45.024" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:45.025" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x558e1a4a84e3 &lt;unknown&gt;
+#1 0x558e1a1d7c76 &lt;unknown&gt;
+#2 0x558e1a1fe757 &lt;unknown&gt;
+#3 0x558e1a1fd029 &lt;unknown&gt;
+#4 0x558e1a23bccc &lt;unknown&gt;
+#5 0x558e1a23b47f &lt;unknown&gt;
+#6 0x558e1a232de3 &lt;unknown&gt;
+#7 0x558e1a2082dd &lt;unknown&gt;
+#8 0x558e1a20934e &lt;unknown&gt;
+#9 0x558e1a4683e4 &lt;unknown&gt;
+#10 0x558e1a46c3d7 &lt;unknown&gt;
+#11 0x558e1a476b20 &lt;unknown&gt;
+#12 0x558e1a46d023 &lt;unknown&gt;
+#13 0x558e1a43b1aa &lt;unknown&gt;
+#14 0x558e1a4916b8 &lt;unknown&gt;
+#15 0x558e1a491847 &lt;unknown&gt;
+#16 0x558e1a4a1243 &lt;unknown&gt;
+#17 0x7f650beb61da &lt;unknown&gt;
+#18 0x7f650bf3ef44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:44.328" endtime="20230605 12:14:45.026"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:44.327" endtime="20230605 12:14:45.027"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:14:48.030" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:45.029" endtime="20230605 12:14:48.031"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:14:48.031" endtime="20230605 12:14:48.032"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:45.028" endtime="20230605 12:14:48.032"/>
+</kw>
+<doc>This is some basic information about the test 2</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:44.324" endtime="20230605 12:14:48.033">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x558e1a4a84e3 &lt;unknown&gt;
+#1 0x558e1a1d7c76 &lt;unknown&gt;
+#2 0x558e1a1fe757 &lt;unknown&gt;
+#3 0x558e1a1fd029 &lt;unknown&gt;
+#4 0x558e1a23bccc &lt;unknown&gt;
+#5 0x558e1a23b47f &lt;unknown&gt;
+#6 0x558e1a232de3 &lt;unknown&gt;
+#7 0x558e1a2082dd &lt;unknown&gt;
+#8 0x558e1a20934e &lt;unknown&gt;
+#9 0x558e1a4683e4 &lt;unknown&gt;
+#10 0x558e1a46c3d7 &lt;unknown&gt;
+#11 0x558e1a476b20 &lt;unknown&gt;
+#12 0x558e1a46d023 &lt;unknown&gt;
+#13 0x558e1a43b1aa &lt;unknown&gt;
+#14 0x558e1a4916b8 &lt;unknown&gt;
+#15 0x558e1a491847 &lt;unknown&gt;
+#16 0x558e1a4a1243 &lt;unknown&gt;
+#17 0x7f650beb61da &lt;unknown&gt;
+#18 0x7f650bf3ef44 clone
+</status>
+</test>
+<test id="s1-t3" name="Logged out user can view a product" line="29">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:48.041" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:48.042" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:48.716" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:48.716" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5630278474e3 &lt;unknown&gt;
+#1 0x563027576c76 &lt;unknown&gt;
+#2 0x56302759d757 &lt;unknown&gt;
+#3 0x56302759c029 &lt;unknown&gt;
+#4 0x5630275daccc &lt;unknown&gt;
+#5 0x5630275da47f &lt;unknown&gt;
+#6 0x5630275d1de3 &lt;unknown&gt;
+#7 0x5630275a72dd &lt;unknown&gt;
+#8 0x5630275a834e &lt;unknown&gt;
+#9 0x5630278073e4 &lt;unknown&gt;
+#10 0x56302780b3d7 &lt;unknown&gt;
+#11 0x563027815b20 &lt;unknown&gt;
+#12 0x56302780c023 &lt;unknown&gt;
+#13 0x5630277da1aa &lt;unknown&gt;
+#14 0x5630278306b8 &lt;unknown&gt;
+#15 0x563027830847 &lt;unknown&gt;
+#16 0x563027840243 &lt;unknown&gt;
+#17 0x7fe4584e61da &lt;unknown&gt;
+#18 0x7fe45856ef44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:48.038" endtime="20230605 12:14:48.718"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:48.037" endtime="20230605 12:14:48.719"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:14:51.722" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:48.721" endtime="20230605 12:14:51.723"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:14:51.723" endtime="20230605 12:14:51.724"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:48.720" endtime="20230605 12:14:51.725"/>
+</kw>
+<doc>This is some basic information about the test 3</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:48.035" endtime="20230605 12:14:51.725">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5630278474e3 &lt;unknown&gt;
+#1 0x563027576c76 &lt;unknown&gt;
+#2 0x56302759d757 &lt;unknown&gt;
+#3 0x56302759c029 &lt;unknown&gt;
+#4 0x5630275daccc &lt;unknown&gt;
+#5 0x5630275da47f &lt;unknown&gt;
+#6 0x5630275d1de3 &lt;unknown&gt;
+#7 0x5630275a72dd &lt;unknown&gt;
+#8 0x5630275a834e &lt;unknown&gt;
+#9 0x5630278073e4 &lt;unknown&gt;
+#10 0x56302780b3d7 &lt;unknown&gt;
+#11 0x563027815b20 &lt;unknown&gt;
+#12 0x56302780c023 &lt;unknown&gt;
+#13 0x5630277da1aa &lt;unknown&gt;
+#14 0x5630278306b8 &lt;unknown&gt;
+#15 0x563027830847 &lt;unknown&gt;
+#16 0x563027840243 &lt;unknown&gt;
+#17 0x7fe4584e61da &lt;unknown&gt;
+#18 0x7fe45856ef44 clone
+</status>
+</test>
+<test id="s1-t4" name="Logged out user can add product to cart" line="36">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:51.732" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:51.736" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:52.407" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:52.407" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5635eca2b4e3 &lt;unknown&gt;
+#1 0x5635ec75ac76 &lt;unknown&gt;
+#2 0x5635ec781757 &lt;unknown&gt;
+#3 0x5635ec780029 &lt;unknown&gt;
+#4 0x5635ec7beccc &lt;unknown&gt;
+#5 0x5635ec7be47f &lt;unknown&gt;
+#6 0x5635ec7b5de3 &lt;unknown&gt;
+#7 0x5635ec78b2dd &lt;unknown&gt;
+#8 0x5635ec78c34e &lt;unknown&gt;
+#9 0x5635ec9eb3e4 &lt;unknown&gt;
+#10 0x5635ec9ef3d7 &lt;unknown&gt;
+#11 0x5635ec9f9b20 &lt;unknown&gt;
+#12 0x5635ec9f0023 &lt;unknown&gt;
+#13 0x5635ec9be1aa &lt;unknown&gt;
+#14 0x5635eca146b8 &lt;unknown&gt;
+#15 0x5635eca14847 &lt;unknown&gt;
+#16 0x5635eca24243 &lt;unknown&gt;
+#17 0x7f991c93b1da &lt;unknown&gt;
+#18 0x7f991c9c3f44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:51.730" endtime="20230605 12:14:52.408"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:51.729" endtime="20230605 12:14:52.409"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:14:55.412" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:52.411" endtime="20230605 12:14:55.413"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:14:55.413" endtime="20230605 12:14:55.414"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:52.410" endtime="20230605 12:14:55.415"/>
+</kw>
+<doc>This is some basic information about the test 4</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:51.727" endtime="20230605 12:14:55.415">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x5635eca2b4e3 &lt;unknown&gt;
+#1 0x5635ec75ac76 &lt;unknown&gt;
+#2 0x5635ec781757 &lt;unknown&gt;
+#3 0x5635ec780029 &lt;unknown&gt;
+#4 0x5635ec7beccc &lt;unknown&gt;
+#5 0x5635ec7be47f &lt;unknown&gt;
+#6 0x5635ec7b5de3 &lt;unknown&gt;
+#7 0x5635ec78b2dd &lt;unknown&gt;
+#8 0x5635ec78c34e &lt;unknown&gt;
+#9 0x5635ec9eb3e4 &lt;unknown&gt;
+#10 0x5635ec9ef3d7 &lt;unknown&gt;
+#11 0x5635ec9f9b20 &lt;unknown&gt;
+#12 0x5635ec9f0023 &lt;unknown&gt;
+#13 0x5635ec9be1aa &lt;unknown&gt;
+#14 0x5635eca146b8 &lt;unknown&gt;
+#15 0x5635eca14847 &lt;unknown&gt;
+#16 0x5635eca24243 &lt;unknown&gt;
+#17 0x7f991c93b1da &lt;unknown&gt;
+#18 0x7f991c9c3f44 clone
+</status>
+</test>
+<test id="s1-t5" name="Logged out user must sign in to check out" line="44">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:55.422" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:55.424" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:56.098" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:56.099" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x557401a374e3 &lt;unknown&gt;
+#1 0x557401766c76 &lt;unknown&gt;
+#2 0x55740178d757 &lt;unknown&gt;
+#3 0x55740178c029 &lt;unknown&gt;
+#4 0x5574017caccc &lt;unknown&gt;
+#5 0x5574017ca47f &lt;unknown&gt;
+#6 0x5574017c1de3 &lt;unknown&gt;
+#7 0x5574017972dd &lt;unknown&gt;
+#8 0x55740179834e &lt;unknown&gt;
+#9 0x5574019f73e4 &lt;unknown&gt;
+#10 0x5574019fb3d7 &lt;unknown&gt;
+#11 0x557401a05b20 &lt;unknown&gt;
+#12 0x5574019fc023 &lt;unknown&gt;
+#13 0x5574019ca1aa &lt;unknown&gt;
+#14 0x557401a206b8 &lt;unknown&gt;
+#15 0x557401a20847 &lt;unknown&gt;
+#16 0x557401a30243 &lt;unknown&gt;
+#17 0x7f7e543f11da &lt;unknown&gt;
+#18 0x7f7e54479f44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:55.420" endtime="20230605 12:14:56.100"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:55.419" endtime="20230605 12:14:56.101"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:14:59.104" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:56.103" endtime="20230605 12:14:59.104"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:14:59.105" endtime="20230605 12:14:59.106"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:56.102" endtime="20230605 12:14:59.106"/>
+</kw>
+<doc>This is some basic information about the test 5</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:55.417" endtime="20230605 12:14:59.107">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x557401a374e3 &lt;unknown&gt;
+#1 0x557401766c76 &lt;unknown&gt;
+#2 0x55740178d757 &lt;unknown&gt;
+#3 0x55740178c029 &lt;unknown&gt;
+#4 0x5574017caccc &lt;unknown&gt;
+#5 0x5574017ca47f &lt;unknown&gt;
+#6 0x5574017c1de3 &lt;unknown&gt;
+#7 0x5574017972dd &lt;unknown&gt;
+#8 0x55740179834e &lt;unknown&gt;
+#9 0x5574019f73e4 &lt;unknown&gt;
+#10 0x5574019fb3d7 &lt;unknown&gt;
+#11 0x557401a05b20 &lt;unknown&gt;
+#12 0x5574019fc023 &lt;unknown&gt;
+#13 0x5574019ca1aa &lt;unknown&gt;
+#14 0x557401a206b8 &lt;unknown&gt;
+#15 0x557401a20847 &lt;unknown&gt;
+#16 0x557401a30243 &lt;unknown&gt;
+#17 0x7f7e543f11da &lt;unknown&gt;
+#18 0x7f7e54479f44 clone
+</status>
+</test>
+<test id="s1-t6" name="User must sign in to check out -Email Step-" line="53">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:14:59.114" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:14:59.115" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:14:59.806" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:14:59.807" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x558e0e9de4e3 &lt;unknown&gt;
+#1 0x558e0e70dc76 &lt;unknown&gt;
+#2 0x558e0e734757 &lt;unknown&gt;
+#3 0x558e0e733029 &lt;unknown&gt;
+#4 0x558e0e771ccc &lt;unknown&gt;
+#5 0x558e0e77147f &lt;unknown&gt;
+#6 0x558e0e768de3 &lt;unknown&gt;
+#7 0x558e0e73e2dd &lt;unknown&gt;
+#8 0x558e0e73f34e &lt;unknown&gt;
+#9 0x558e0e99e3e4 &lt;unknown&gt;
+#10 0x558e0e9a23d7 &lt;unknown&gt;
+#11 0x558e0e9acb20 &lt;unknown&gt;
+#12 0x558e0e9a3023 &lt;unknown&gt;
+#13 0x558e0e9711aa &lt;unknown&gt;
+#14 0x558e0e9c76b8 &lt;unknown&gt;
+#15 0x558e0e9c7847 &lt;unknown&gt;
+#16 0x558e0e9d7243 &lt;unknown&gt;
+#17 0x7ff1a63831da &lt;unknown&gt;
+#18 0x7ff1a640bf44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:14:59.112" endtime="20230605 12:14:59.808"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:14:59.111" endtime="20230605 12:14:59.809"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:15:02.812" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:14:59.811" endtime="20230605 12:15:02.812"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:15:02.813" endtime="20230605 12:15:02.816"/>
+</kw>
+<status status="PASS" starttime="20230605 12:14:59.810" endtime="20230605 12:15:02.817"/>
+</kw>
+<doc>This is some basic information about the test 6</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:14:59.108" endtime="20230605 12:15:02.817">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x558e0e9de4e3 &lt;unknown&gt;
+#1 0x558e0e70dc76 &lt;unknown&gt;
+#2 0x558e0e734757 &lt;unknown&gt;
+#3 0x558e0e733029 &lt;unknown&gt;
+#4 0x558e0e771ccc &lt;unknown&gt;
+#5 0x558e0e77147f &lt;unknown&gt;
+#6 0x558e0e768de3 &lt;unknown&gt;
+#7 0x558e0e73e2dd &lt;unknown&gt;
+#8 0x558e0e73f34e &lt;unknown&gt;
+#9 0x558e0e99e3e4 &lt;unknown&gt;
+#10 0x558e0e9a23d7 &lt;unknown&gt;
+#11 0x558e0e9acb20 &lt;unknown&gt;
+#12 0x558e0e9a3023 &lt;unknown&gt;
+#13 0x558e0e9711aa &lt;unknown&gt;
+#14 0x558e0e9c76b8 &lt;unknown&gt;
+#15 0x558e0e9c7847 &lt;unknown&gt;
+#16 0x558e0e9d7243 &lt;unknown&gt;
+#17 0x7ff1a63831da &lt;unknown&gt;
+#18 0x7ff1a640bf44 clone
+</status>
+</test>
+<test id="s1-t7" name="User must sign in to check out -Password Step-" line="63">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:15:02.826" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:15:02.828" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:15:03.524" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:15:03.524" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x560913ea04e3 &lt;unknown&gt;
+#1 0x560913bcfc76 &lt;unknown&gt;
+#2 0x560913bf6757 &lt;unknown&gt;
+#3 0x560913bf5029 &lt;unknown&gt;
+#4 0x560913c33ccc &lt;unknown&gt;
+#5 0x560913c3347f &lt;unknown&gt;
+#6 0x560913c2ade3 &lt;unknown&gt;
+#7 0x560913c002dd &lt;unknown&gt;
+#8 0x560913c0134e &lt;unknown&gt;
+#9 0x560913e603e4 &lt;unknown&gt;
+#10 0x560913e643d7 &lt;unknown&gt;
+#11 0x560913e6eb20 &lt;unknown&gt;
+#12 0x560913e65023 &lt;unknown&gt;
+#13 0x560913e331aa &lt;unknown&gt;
+#14 0x560913e896b8 &lt;unknown&gt;
+#15 0x560913e89847 &lt;unknown&gt;
+#16 0x560913e99243 &lt;unknown&gt;
+#17 0x7f09b35901da &lt;unknown&gt;
+#18 0x7f09b3618f44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:15:02.824" endtime="20230605 12:15:03.526"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:15:02.822" endtime="20230605 12:15:03.526"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:15:06.530" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:15:03.529" endtime="20230605 12:15:06.530"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:15:06.531" endtime="20230605 12:15:06.531"/>
+</kw>
+<status status="PASS" starttime="20230605 12:15:03.528" endtime="20230605 12:15:06.532"/>
+</kw>
+<doc>This is some basic information about the test 7</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:15:02.819" endtime="20230605 12:15:06.532">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x560913ea04e3 &lt;unknown&gt;
+#1 0x560913bcfc76 &lt;unknown&gt;
+#2 0x560913bf6757 &lt;unknown&gt;
+#3 0x560913bf5029 &lt;unknown&gt;
+#4 0x560913c33ccc &lt;unknown&gt;
+#5 0x560913c3347f &lt;unknown&gt;
+#6 0x560913c2ade3 &lt;unknown&gt;
+#7 0x560913c002dd &lt;unknown&gt;
+#8 0x560913c0134e &lt;unknown&gt;
+#9 0x560913e603e4 &lt;unknown&gt;
+#10 0x560913e643d7 &lt;unknown&gt;
+#11 0x560913e6eb20 &lt;unknown&gt;
+#12 0x560913e65023 &lt;unknown&gt;
+#13 0x560913e331aa &lt;unknown&gt;
+#14 0x560913e896b8 &lt;unknown&gt;
+#15 0x560913e89847 &lt;unknown&gt;
+#16 0x560913e99243 &lt;unknown&gt;
+#17 0x7f09b35901da &lt;unknown&gt;
+#18 0x7f09b3618f44 clone
+</status>
+</test>
+<test id="s1-t8" name="Logged out user can go to Electronics Menu" line="74">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230605 12:15:06.540" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg timestamp="20230605 12:15:06.541" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20230605 12:15:07.217" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230605 12:15:07.218" level="FAIL">WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x55612b82a4e3 &lt;unknown&gt;
+#1 0x55612b559c76 &lt;unknown&gt;
+#2 0x55612b580757 &lt;unknown&gt;
+#3 0x55612b57f029 &lt;unknown&gt;
+#4 0x55612b5bdccc &lt;unknown&gt;
+#5 0x55612b5bd47f &lt;unknown&gt;
+#6 0x55612b5b4de3 &lt;unknown&gt;
+#7 0x55612b58a2dd &lt;unknown&gt;
+#8 0x55612b58b34e &lt;unknown&gt;
+#9 0x55612b7ea3e4 &lt;unknown&gt;
+#10 0x55612b7ee3d7 &lt;unknown&gt;
+#11 0x55612b7f8b20 &lt;unknown&gt;
+#12 0x55612b7ef023 &lt;unknown&gt;
+#13 0x55612b7bd1aa &lt;unknown&gt;
+#14 0x55612b8136b8 &lt;unknown&gt;
+#15 0x55612b813847 &lt;unknown&gt;
+#16 0x55612b823243 &lt;unknown&gt;
+#17 0x7fecc3a6c1da &lt;unknown&gt;
+#18 0x7fecc3af4f44 clone
+</msg>
+<status status="FAIL" starttime="20230605 12:15:06.538" endtime="20230605 12:15:07.219"/>
+</kw>
+<status status="FAIL" starttime="20230605 12:15:06.536" endtime="20230605 12:15:07.220"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230605 12:15:10.223" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230605 12:15:07.222" endtime="20230605 12:15:10.224"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230605 12:15:10.224" endtime="20230605 12:15:10.225"/>
+</kw>
+<status status="PASS" starttime="20230605 12:15:07.221" endtime="20230605 12:15:10.225"/>
+</kw>
+<doc>This is some basic information about the test 8</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230605 12:15:06.534" endtime="20230605 12:15:10.226">Setup failed:
+WebDriverException: Message: unknown error: cannot find Chrome binary
+Stacktrace:
+#0 0x55612b82a4e3 &lt;unknown&gt;
+#1 0x55612b559c76 &lt;unknown&gt;
+#2 0x55612b580757 &lt;unknown&gt;
+#3 0x55612b57f029 &lt;unknown&gt;
+#4 0x55612b5bdccc &lt;unknown&gt;
+#5 0x55612b5bd47f &lt;unknown&gt;
+#6 0x55612b5b4de3 &lt;unknown&gt;
+#7 0x55612b58a2dd &lt;unknown&gt;
+#8 0x55612b58b34e &lt;unknown&gt;
+#9 0x55612b7ea3e4 &lt;unknown&gt;
+#10 0x55612b7ee3d7 &lt;unknown&gt;
+#11 0x55612b7f8b20 &lt;unknown&gt;
+#12 0x55612b7ef023 &lt;unknown&gt;
+#13 0x55612b7bd1aa &lt;unknown&gt;
+#14 0x55612b8136b8 &lt;unknown&gt;
+#15 0x55612b813847 &lt;unknown&gt;
+#16 0x55612b823243 &lt;unknown&gt;
+#17 0x7fecc3a6c1da &lt;unknown&gt;
+#18 0x7fecc3af4f44 clone
+</status>
+</test>
+<kw name="Cleanup Testing Data" library="Common" type="TEARDOWN">
+<kw name="Log" library="BuiltIn">
+<arg>I am cleaning up the test data...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230605 12:15:10.231" level="INFO">I am cleaning up the test data...</msg>
+<status status="PASS" starttime="20230605 12:15:10.231" endtime="20230605 12:15:10.232"/>
+</kw>
+<status status="PASS" starttime="20230605 12:15:10.230" endtime="20230605 12:15:10.232"/>
+</kw>
+<doc>This is some basic information about whole suite</doc>
+<status status="FAIL" starttime="20230605 12:14:40.164" endtime="20230605 12:15:10.232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="8" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
